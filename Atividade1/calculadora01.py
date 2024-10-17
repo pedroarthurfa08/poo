@@ -9,24 +9,25 @@ def cal(op, n1, n2):
         if n2 != 0:
             return n1 / n2
         else:
-            return "Erro, divisão por zero não permitida"
+            return "A divisão por zero não permitida"
     else:
         return "Operação Invalida"
 def main():
-
     while True:
         try:
-            n1 = float(input("Digite o primeiro número: "))
-            n2 = float(input("Digite o segundo número: "))
+            n1 = float(input("Digite um primeiro número: "))
+            n2 = float(input("Digite um segundo número: "))
+
             op = input("Digite a operação: ")
+
             if op =='q':
-                print("")
+                print("Escolha a operação (+, -, *, /) ou 'q' para sair:")
                 break
             
             resultado = cal(op, n1, n2)
-            print(f'')
+            print(f"Resultado {resultado}")
+
         except ValueError:
-            print("")
-            
-if __name__ == '__main__':
-    main()
+            print("Insira valores númericos válidos.")
+
+main()
