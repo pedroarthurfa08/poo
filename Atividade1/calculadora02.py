@@ -35,7 +35,8 @@ def main():
             print("Encerrando a calculadora...")
             break
 
-        resultado = mi_calc.calcular(n1, n2, op)  # Chamada correta do método
+        resultado = mi_calc.calcular(n1, n2, op)
+
         print(f'{n1} {op} {n2} = {resultado}')
 
 main()
