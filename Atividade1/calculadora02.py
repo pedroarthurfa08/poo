@@ -3,7 +3,8 @@ class Calculadora:
     n2 = None
     op = None
 
-    def calcular(self, n1, n2, op):  # Método dentro da classe
+    def calcular(self, n1, n2, op):
+
         self.n1 = n1
         self.n2 = n2
         self.op = op
