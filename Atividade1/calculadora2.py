@@ -3,7 +3,7 @@ class Calculadora:
     n2 = None
     op = None
 
-    def calcular(self, n1, n2, op):  # Método dentro da classe
+    def calcular(self, n1, n2, op):
         self.n1 = n1
         self.n2 = n2
         self.op = op
@@ -34,7 +34,7 @@ def main():
             print("Encerrando a calculadora...")
             break
 
-        resultado = mi_calc.calcular(n1, n2, op)  # Chamada correta do método
+        resultado = mi_calc.calcular(n1, n2, op)
         print(f'{n1} {op} {n2} = {resultado}')
-
+        
 main()

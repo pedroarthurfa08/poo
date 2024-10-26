@@ -17,8 +17,8 @@ def vencedor(usuario, computador):
     if usuario == computador:
         return "Empate!"
     elif (usuario == "pedra" and computador == "tesoura") or \
-          (usuario == "tesoura" and computador == "papel") or \
-            (usuario == "papel" and computador == "pedra"):
+        (suario == "tesoura" and computador == "papel") or \
+        (usuario == "papel" and computador == "pedra"):
         return "Você venceu!"
     else:
         return "Você perdeu e o pc ganhou!"
